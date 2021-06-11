@@ -115,7 +115,6 @@ class Obfuscator(object):
             # add decrypt function in main file
             self._content = self._content + "\n" + BaseStrings.DECRYPT
 
-            # FIX THIS SHIT!!!
             # add the decrypt function to the obfuscated hashmap
             self.__func_hashtable["decrypt"] = "char* (*decrypt)(char str[], int length)"
 
